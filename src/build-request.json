@@ -1,0 +1,40 @@
+{
+  "kind": "build_request",
+  "title": "Populate vocabulary database with 3000 GRE words",
+  "projectName": "GRE Vocabulary Builder",
+  "priority": "high",
+  "requirements": [
+    {
+      "id": "REQ-7",
+      "text": "Populate the backend vocabulary database with 3000 GRE words, including for each word: the word itself, definition, part of speech, example sentence, difficulty level, and category",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "the words list is empty. could you please populate the list with 3000 gre words"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend contains exactly 3000 GRE vocabulary words",
+        "Each word entry includes: word, definition, part of speech, example sentence, difficulty level, and category",
+        "Words are accessible via the existing addWord and getWords functions",
+        "Flashcard and practice test features work with the populated vocabulary"
+      ]
+    }
+  ],
+  "constraints": [
+    "Must use the existing VocabularyWord type structure from backend/main.mo",
+    "Must maintain single-actor architecture"
+  ],
+  "nonGoals": [
+    "Modifying the frontend UI or components",
+    "Changing the data model structure",
+    "Adding new backend functions beyond populating existing data"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

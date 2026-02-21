@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "GRE Vocabulary Builder app with flashcards, practice tests, progress tracking, daily notifications, and offline database of 3000+ GRE words",
+  "architectural_notes": [],
+  "known_issues": [
+    "Words list is empty and needs to be populated with 3000 GRE words"
+  ],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-implement-flashcard-system-that-displays-a-word-and-allows-users-to-reveal-the-definition-with-ability-to-navigate-between-cards",
+      "title": "Implement flashcard system that displays a word and allows users to reveal the definition, with ability to navigate between cards",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-practice-test-feature-that-quizzes-users-on-vocabulary-with-multiple-choice-questions-and-immediate-feedback",
+      "title": "Create practice test feature that quizzes users on vocabulary with multiple choice questions and immediate feedback",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-progress-tracking-system-that-records-user-performance-tracks-words-learned-and-displays-statistics-over-time",
+      "title": "Implement progress tracking system that records user performance, tracks words learned, and displays statistics over time",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-daily-notification-system-that-reminds-users-to-study-vocabulary-at-a-configurable-time",
+      "title": "Add daily notification system that reminds users to study vocabulary at a configurable time",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-a-clean-modern-interface-with-a-cohesive-visual-theme-using-warm-academic-colors-burgundy-cream-forest-green-serif-typography-for-vocabulary-words-and-card-based-layouts-that-emphasize-readability-and-focus",
+      "title": "Design a clean, modern interface with a cohesive visual theme using warm academic colors (burgundy, cream, forest green), serif typography for vocabulary words, and card-based layouts that emphasize readability and focus",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Flashcard system for GRE vocabulary",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Practice tests feature",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Progress tracking system",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Daily notifications",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Offline database with 3000+ GRE words",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Create a backend data model to store GRE vocabulary words with fields for word, definition, part of speech, example sentence, difficulty level, and category",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Populate the backend vocabulary database with 3000 GRE words, including for each word: the word itself, definition, part of speech, example sentence, difficulty level, and category",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "status": "pending"
+    }
+  ],
+  "projectName": "GRE Vocabulary Builder",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

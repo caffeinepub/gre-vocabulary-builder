@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        
+        /* Warm Academic Color Palette - Light Mode */
+        --background: 0.98 0.02 60;  /* Cream background */
+        --foreground: 0.2 0.01 30;   /* Dark text */
+        --card: 1 0 0;               /* White cards */
+        --card-foreground: 0.2 0.01 30;
+        --popover: 1 0 0;
+        --popover-foreground: 0.2 0.01 30;
+        
+        /* Burgundy primary color */
+        --primary: 0.35 0.15 15;     /* Rich burgundy */
+        --primary-foreground: 0.98 0.02 60;
+        
+        /* Cream secondary */
+        --secondary: 0.97 0.03 85;
+        --secondary-foreground: 0.35 0.15 15;
+        
+        --muted: 0.95 0.02 60;
+        --muted-foreground: 0.5 0.01 30;
+        --accent: 0.95 0.02 60;
+        --accent-foreground: 0.35 0.15 15;
+        
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        
+        --border: 0.35 0.05 15 / 20%;
+        --input: 0.35 0.05 15 / 30%;
+        --ring: 0.35 0.15 15;
+        
+        /* Forest green for accents */
+        --forest-green: 0.45 0.12 150;
+        
+        /* Burgundy for main theme */
+        --burgundy: 0.35 0.15 15;
+        --cream: 0.98 0.02 60;
+        
+        --chart-1: 0.646 0.222 41.116;
+        --chart-2: 0.6 0.118 184.704;
+        --chart-3: 0.398 0.07 227.392;
+        --chart-4: 0.828 0.189 84.429;
+        --chart-5: 0.769 0.188 70.08;
+    }
+
+    .dark {
+        --background: 0.2 0.01 30;   /* Dark background */
+        --foreground: 0.95 0.02 60;  /* Light text */
+        --card: 0.25 0.01 30;
+        --card-foreground: 0.95 0.02 60;
+        --popover: 0.25 0.01 30;
+        --popover-foreground: 0.95 0.02 60;
+        
+        /* Lighter burgundy for dark mode */
+        --primary: 0.55 0.15 15;
+        --primary-foreground: 0.2 0.01 30;
+        
+        --secondary: 0.3 0.01 30;
+        --secondary-foreground: 0.95 0.02 60;
+        
+        --muted: 0.3 0.01 30;
+        --muted-foreground: 0.65 0.02 60;
+        --accent: 0.35 0.01 30;
+        --accent-foreground: 0.95 0.02 60;
+        
+        --destructive: 0.704 0.191 22.216;
+        --destructive-foreground: 0.95 0.02 60;
+        
+        --border: 0.95 0.02 60 / 15%;
+        --input: 0.95 0.02 60 / 20%;
+        --ring: 0.55 0.15 15;
+        
+        --forest-green: 0.55 0.12 150;
+        --burgundy: 0.55 0.15 15;
+        --cream: 0.25 0.01 30;
+        
+        --chart-1: 0.488 0.243 264.376;
+        --chart-2: 0.696 0.17 162.48;
+        --chart-3: 0.769 0.188 70.08;
+        --chart-4: 0.627 0.265 303.9;
+        --chart-5: 0.645 0.246 16.439;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}
+
+@layer utilities {
+    .text-burgundy {
+        color: oklch(var(--burgundy));
+    }
+    
+    .bg-burgundy {
+        background-color: oklch(var(--burgundy));
+    }
+    
+    .border-burgundy {
+        border-color: oklch(var(--burgundy));
+    }
+    
+    .text-forest-green {
+        color: oklch(var(--forest-green));
+    }
+    
+    .bg-forest-green {
+        background-color: oklch(var(--forest-green));
+    }
+    
+    .border-forest-green {
+        border-color: oklch(var(--forest-green));
+    }
+    
+    .text-cream {
+        color: oklch(var(--cream));
+    }
+    
+    .bg-cream {
+        background-color: oklch(var(--cream));
+    }
+    
+    .perspective-1000 {
+        perspective: 1000px;
+    }
+    
+    .backface-hidden {
+        backface-visibility: hidden;
+    }
+    
+    .transform-style-3d {
+        transform-style: preserve-3d;
+    }
+    
+    .rotate-y-180 {
+        transform: rotateY(180deg);
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup, theme provider, and routes for all pages; RootComponent properly named to use useNotifications hook.",
+  "frontend/src/components/Layout.tsx": "Layout wrapper component providing consistent header navigation with logo, desktop/mobile menus, and footer with attribution.",
+  "frontend/src/pages/HomePage.tsx": "Landing page with hero section using generated background image, feature cards for flashcards/tests/progress, and statistics display.",
+  "frontend/src/pages/FlashcardsPage.tsx": "Flashcard study page that wraps the FlashcardViewer component with header card.",
+  "frontend/src/components/FlashcardViewer.tsx": "Interactive flashcard component with 3D flip animation, displays vocabulary words on front and definitions on back, includes navigation controls.",
+  "frontend/src/pages/PracticeTestPage.tsx": "Practice test page managing test configuration, active test state, and results display with configurable question count.",
+  "frontend/src/components/PracticeTest.tsx": "Quiz component displaying multiple-choice questions, handling answer selection, showing immediate feedback, and tracking score throughout test; updated with Tailwind v3 class names.",
+  "frontend/src/components/TestResults.tsx": "Test completion screen showing final score, percentage, performance breakdown, and options to retake or return home.",
+  "frontend/src/pages/ProgressPage.tsx": "Progress tracking page that wraps the ProgressDashboard component with header card.",
+  "frontend/src/components/ProgressDashboard.tsx": "Dashboard displaying user statistics including words learned, accuracy rate, total attempts, and visual progress indicators with brain icon; updated with Tailwind v3 class names.",
+  "frontend/src/pages/SettingsPage.tsx": "Settings page that wraps the NotificationSettings component with header card.",
+  "frontend/src/components/NotificationSettings.tsx": "Notification configuration component with toggle for daily reminders, time picker, permission handling, and test notification button.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for backend operations including getPracticeQuestion, submitAnswer, and getUserStats with proper error handling and cache invalidation.",
+  "frontend/src/hooks/useUserProgress.ts": "Custom hook that fetches user statistics using the current authenticated user's principal.",
+  "frontend/src/hooks/useNotifications.ts": "Hook managing daily notification scheduling using browser Notification API with localStorage persistence and navigation on click.",
+  "frontend/src/index.css": "Global styles with OKLCH color system defining warm academic palette (burgundy, cream, forest green) for light and dark modes, plus utility classes for custom colors and 3D transforms.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending theme with custom burgundy/forest-green/cream colors, serif font family (Georgia, Garamond), and card shadows."
+}
